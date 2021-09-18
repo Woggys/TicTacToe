@@ -1,6 +1,13 @@
 
+class player:
 
-def get_input():
-    player_input = str(input())
+    # Allow the player to change what icon they want to use
+    def __init__(self, icon):
+        self.icon = icon
 
-    return player_input
+    # Provide input from players
+    @staticmethod
+    def get_input():
+        player_input = str(input())
+
+        return player_input
